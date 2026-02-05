@@ -104,8 +104,9 @@ $CmdLine = @(
 # Create the edited setup.ini
 $setupini = @"
 [Product]
-msi=AcroPro.msi
+msi=AcroRead.msi
 PATCH=$PatchFile
 CmdLine=$CmdLine
 "@
 Set-Content -Path "$DownloadsFolder\AcroRdrDCx64\setup.ini" -Value $setupini -Encoding Default -Force
+
